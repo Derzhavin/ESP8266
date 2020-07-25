@@ -68,9 +68,6 @@ flash_esp_init_data_default:
 	@echo flash esp_init_data_default
 	esptool.py --port /dev/ttyUSB0 write_flash 0xFC000 $(ESP_SDK_PATH)/bin/esp_init_data_default_v05.bin
 
-flash_boot_v1.7:
-	@echo flash boot v1.7:
-
 flash_user_program:
 	@echo flash:
 	esptool.py --port /dev/ttyUSB0 -b 115200  write_flash --no-compress 0x00000 $(TARGET)0x00000.bin 0x10000 $(TARGET)0x10000.bin
