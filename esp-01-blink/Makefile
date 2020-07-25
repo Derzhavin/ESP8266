@@ -39,7 +39,11 @@ OBJECTS_ESP = $(SOURCES:.c=.o)
 
 TARGET = esp-image
 
-.PHONY: $(TARGET) clean flash
+.PHONY: $(TARGET) \
+		clean \
+		erase_flash \
+		flash_esp_init_data_default \
+		flash_user_program
 
 $(TARGET): esp-elf
 	@echo elf2image:
