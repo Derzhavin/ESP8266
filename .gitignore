@@ -32,6 +32,7 @@
 *.app
 
 # custom
-esp-image
+*-image
+*-elf
 *.bin
 .idea/
