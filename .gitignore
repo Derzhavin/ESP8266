@@ -34,4 +34,4 @@
 # custom
 esp-image
 *.bin
-/.idea
+.idea/
